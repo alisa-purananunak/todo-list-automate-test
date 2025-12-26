@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "tc-001": "playwright tc-001",
-    "tc-002": "playwright tc-002"
+    "tc-002": "playwright tc-002",
+    "tc-003": "playwright tc-003"
   },
   "repository": {
     "type": "git",
