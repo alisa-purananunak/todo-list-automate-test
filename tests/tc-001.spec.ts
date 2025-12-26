@@ -6,5 +6,6 @@ test('tc-001', async ({ page }) => {
   await page.locator('#new-task').fill('Test');
   await page.getByRole('button', { name: 'add' }).click();
   await page.getByRole('link', { name: 'To-Do Tasks' }).click();
+  
   await expect(page.locator('#todo.is-active #incomplete-tasks #text-1')).toHaveText('Test');
 });

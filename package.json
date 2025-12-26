@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "tc-001": "playwright tc-001"
+    "tc-001": "playwright tc-001",
+    "tc-002": "playwright tc-002"
   },
   "repository": {
     "type": "git",
