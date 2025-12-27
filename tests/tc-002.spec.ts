@@ -1,7 +1,10 @@
 import { test, expect } from '@playwright/test';
 
+test.beforeEach(async ({ page }) => {
+  await page.goto('/To-Do-List/');
+});
+
 test('tc-002', async ({ page }) => {
-  await page.goto('https://abhigyank.github.io/To-Do-List/');
   await page.locator('#new-task').click();
   await page.locator('#new-task').fill('test');
   await page.getByRole('button', { name: 'add' }).click();
